@@ -8,7 +8,7 @@ Funções automáticas DAX em uso (conforme Etapas Aplicadas):
 ```
 Exemplo de configuração da função Csv.Document (sintaxe do Power Query)  
 <p align="center">
-	<img src="https://github.com/rosacarla/PowerBI-tecnicas-avancadas/blob/main/images/configuracao-funcao-fonte-csv.png" width="500">
+	<img src="https://github.com/rosacarla/PowerBI-tecnicas-avancadas/blob/main/images/configuracao-funcao-fonte-csv.png" width="750">
 </p>  
 
 * Tipo Alterado
