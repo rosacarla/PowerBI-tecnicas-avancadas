@@ -1,4 +1,4 @@
-#### #Como importar dados de CSV e TXT 
+#### # Como importar dados de CSV e TXT 
 Funções automáticas DAX em uso (conforme Etapas Aplicadas):  
 
 * Fonte conecta a arquivo CSV e TXT  
@@ -17,7 +17,7 @@ Exemplo de configuração da função Csv.Document (sintaxe do Power Query)
 
 ---  
 
-#### #Como importar dados do Excel e funções da linguagem M (Power Query) 
+#### # Como importar dados do Excel e funções da linguagem M (Power Query) 
 Funções automáticas DAX em uso (conforme Etapas Aplicadas):  
 
 * Fonte conecta a arquivo Excel (escolher opção Tabela (ícone azul) para importar.  
@@ -33,7 +33,7 @@ Não usar Planilha para evitar importação duplicada, pois tabelas são interva
 
 ---  
 
-#### #Como importar dados da pasta
+#### # Como importar dados da pasta
 Funções automáticas DAX em uso (conforme Etapas Aplicadas):  
 
 * Fonte conecta a uma Pasta do Windows (arquivos inicialmente importados como conteúdo binário; todas as importações de arquivo para o Power BI ficam dessa forma)
@@ -75,4 +75,42 @@ Funções automáticas DAX em uso (conforme Etapas Aplicadas):
 
 --- 
 
-#### 
+#### # Como importar dados de fontes da Web utilizando tabelas
+Funções automáticas DAX em uso (conforme Etapas Aplicadas):  
+* Fonte conecta a conteúdo da Web em tabela  
+```
+= Web.BrowserContents("https://pt.wikipedia.org/wiki/Lista_de_pa%C3%ADses_por_popula%C3%A7%C3%A3o")  
+```  
+* Tabela Extraída do HTML  
+```
+= Html.Table(Fonte, {{"Column1", "TABLE.wikitable.sortable.jquery-tablesorter > * > TR > :nth-child(1)"}, {"Column2", "TABLE.wikitable.sortable.jquery-tablesorter > * > TR > :nth-child(2)"}, {"Column3", "TABLE.wikitable.sortable.jquery-tablesorter > * > TR > :nth-child(3)"}, {"Column4", "TABLE.wikitable.sortable.jquery-tablesorter > * > TR > :nth-child(4)"}, {"Column5", "TABLE.wikitable.sortable.jquery-tablesorter > * > TR > :nth-child(5)"}}, [RowSelector="TABLE.wikitable.sortable.jquery-tablesorter > * > TR"])  
+```
+* Cabeçalhos Promovidos  
+```
+= Table.PromoteHeaders(#"Tabela extraída de HTML", [PromoteAllScalars=true])  
+```
+* Tipo Alterado  
+```
+= Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Posição", type text}, {"País (ou território dependente)", type text}, {"Estimativa da ONU", type text}, {"Data", Int64.Type}, {"Estimativa Oficial", type text}})  
+```
+
+---  
+
+#### # Como importar dados de fontes da Web utilizando exemplos  
+Funções automáticas DAX em uso (conforme Etapas Aplicadas):  
+
+* Fonte conecta a conteúdo da Web
+```
+= Web.BrowserContents("https://www.ibge.gov.br/")  
+```
+* Tabela extraída de HTML  
+```
+= Html.Table(Fonte, {{"Column1", ".indicador-title"}, {"Column2", ".indicador-value"}, {"Column3", ".indicador-text"}, {"Column4", "SMALL"}, {"Column5", ".dado-periodo"}}, [RowSelector=".indicadores-list A"])  
+```
+* Tipo Alterado
+```
+= Table.TransformColumnTypes(#"Tabela extraída de HTML",{{"Column1", type text}, {"Column2", Percentage.Type}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}})  
+```
+<p align="center">
+	<img src="" width="750">
+</p>  
