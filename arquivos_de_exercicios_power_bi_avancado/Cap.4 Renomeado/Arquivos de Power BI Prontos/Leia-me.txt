@@ -1,0 +1,8 @@
+
+Prezado aluno, 
+
+Utilize esses arquivos caso não esteja fazendo o passo a passo desde o início das aulas. Eles são os estágios de desenvolvimento de cada aula.
+
+O nome da aula é referenciada em seu nome. Por exemplo 04_05, é o capítulo 4, aula 5.
+
+Para acessar o Power Query, lembre-se que é necessário clicar em Editar Consultas no menu da Página Inicial.
