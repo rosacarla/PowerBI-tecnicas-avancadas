@@ -488,12 +488,9 @@ Cálculo de Lucro Variação
 ```
 Lucro Variação = [Soma Vendas]-Produtos[Soma Custo Variação]  
 ```  
-Para as categorias que apresentam valores negativos é recomendado ajuste do investimento para que todas gerem lucro.
-
-
-
-
+Para as categorias que apresentam valores negativos é recomendado ajuste do investimento para que todas gerem lucro.  
 - Calcule o ano anterior com a SAMEPERIODLASTYEAR  
+
 - Calcule o mês anterior com a DATEADD  
 - Acumule valores com funções de TOTALYDT, QTD, e MTD  
 
