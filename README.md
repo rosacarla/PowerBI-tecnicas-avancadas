@@ -7,34 +7,32 @@ Projeto em Power BI com a base de dados AdventureWorks (uma empresa fictícia cr
 #### 📑 **CONTEÚDOS DO CURSO:**
 
 ☑️ **0. Introdução**  
-- Bem-vindos ao curso avançado de Power BI  
-- O que você precisa saber para aproveitar esse curso  
+- Bem-vindos ao curso avançado de Power BI
+- O que você precisa saber para aproveitar esse curso   
 
 
 ☑️ **1. Conceitos e objetivos do Business Intelligence**  
 - Conceito e importância do business intelligence  
 <p align="center">
-	<img src="" width="500">
+	<img src="https://github.com/rosacarla/PowerBI-tecnicas-avancadas/blob/main/images/processo-bi.png" width="380">
 </p>
 
 - Apresentação dos arquivos e projeto do curso  
-
+[<<< Arquivos de exercícios >>>](https://github.com/rosacarla/PowerBI-tecnicas-avancadas/tree/main/arquivos_de_exercicios_power_bi_avancado)    
 <p align="center">
-	<img src="" width="500">
+	<img src="https://github.com/rosacarla/PowerBI-tecnicas-avancadas/blob/main/images/arq-projeto.png" width="380">
 </p>  
-
-[Arquivos de exercícios]()  
 
 
 ☑️ **2. Conhecendo o ecossistema do Power BI**   
 - Compreenda as diferentes plataformas da Microsoft para análise de dados  
 <p align="center">
-	<img src="" width="500">
+	<img src="https://github.com/rosacarla/PowerBI-tecnicas-avancadas/blob/main/images/plataformas-desenvolvimento.png" width="750">
 </p>  
 
 - Conheça outros softwares de Business Intelligence  
 <p align="center">
-	<img src="" width="500">
+	<img src="https://github.com/rosacarla/PowerBI-tecnicas-avancadas/blob/main/images/outros-softwares-bi.png" width="500">
 </p> 
 
 
@@ -42,7 +40,7 @@ Projeto em Power BI com a base de dados AdventureWorks (uma empresa fictícia cr
 - Conheça os diferentes tipos de dados  
 Exemplo de funcionalidade: ODBC (conector universal de dados)  
 <p align="center">
-	<img src="" width="500">
+	<img src="https://github.com/rosacarla/PowerBI-tecnicas-avancadas/blob/main/images/conector-universal-dados.png" width="500">
 </p>   
 
 - Como importar dados do Excel e funções da linguagem M (Power Query)  
