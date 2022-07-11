@@ -97,6 +97,10 @@ Funções automáticas DAX em uso (conforme Etapas Aplicadas):
 ---  
 
 #### # Como importar dados de fontes da Web utilizando exemplos  
+<p align="center">
+	<img src="https://github.com/rosacarla/PowerBI-tecnicas-avancadas/blob/main/images/importa-web-exemplos.png" width="750">
+</p>  
+
 Funções automáticas DAX em uso (conforme Etapas Aplicadas):  
 
 * Fonte conecta a conteúdo da Web
@@ -110,7 +114,6 @@ Funções automáticas DAX em uso (conforme Etapas Aplicadas):
 * Tipo Alterado
 ```
 = Table.TransformColumnTypes(#"Tabela extraída de HTML",{{"Column1", type text}, {"Column2", Percentage.Type}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}})  
-```
-<p align="center">
-	<img src="" width="750">
-</p>  
+```  
+
+---   
