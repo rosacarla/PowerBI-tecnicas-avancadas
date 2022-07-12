@@ -1,3 +1,19 @@
+#### # Como importar dados do Excel e funções da linguagem M (Power Query) 
+Funções automáticas DAX em uso (conforme Etapas Aplicadas):  
+
+* Fonte conecta a arquivo Excel (escolher opção Tabela (ícone azul) para importar.  
+Não usar Planilha para evitar importação duplicada, pois tabelas são intervalos delimitados com cabeçalhos e tipos de dados definidos)
+``` 
+= Excel.Workbook(File.Contents("C:\Users\carla\Área de Trabalho\meu-github\PowerBI-tecnicas-avancadas\arquivos_de_exercicios_power_bi_avancado\Cap.3\03_02_Clientes.xlsx"), null, true)  
+```  
+
+* Tipo alterado 
+``` 
+= Table.TransformColumnTypes(DadosClientes_Table,{{"ID Cliente", Int64.Type}, {"Cliente", type text}, {"CEP", type text}, {"Data Pedido", type date}})
+``` 
+
+---  
+
 #### # Como importar dados de CSV e TXT 
 Funções automáticas DAX em uso (conforme Etapas Aplicadas):  
 
@@ -14,22 +30,6 @@ Exemplo de configuração da função Csv.Document (sintaxe do Power Query)
 ```
 = Table.TransformColumnTypes(Fonte,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}})  
 ```  
-
----  
-
-#### # Como importar dados do Excel e funções da linguagem M (Power Query) 
-Funções automáticas DAX em uso (conforme Etapas Aplicadas):  
-
-* Fonte conecta a arquivo Excel (escolher opção Tabela (ícone azul) para importar.  
-Não usar Planilha para evitar importação duplicada, pois tabelas são intervalos delimitados com cabeçalhos e tipos de dados definidos)
-``` 
-= Excel.Workbook(File.Contents("C:\Users\carla\Área de Trabalho\meu-github\PowerBI-tecnicas-avancadas\arquivos_de_exercicios_power_bi_avancado\Cap.3\03_02_Clientes.xlsx"), null, true)  
-```  
-
-* Tipo alterado 
-``` 
-= Table.TransformColumnTypes(DadosClientes_Table,{{"ID Cliente", Int64.Type}, {"Cliente", type text}, {"CEP", type text}, {"Data Pedido", type date}})
-``` 
 
 ---  
 
