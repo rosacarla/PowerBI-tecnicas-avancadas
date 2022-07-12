@@ -42,6 +42,16 @@ Funções automáticas DAX em uso (conforme Etapas Aplicadas):
 
 ---  
 
+#### # Utilize o preenchimento para cima e para baixo  
+Função automática DAX em uso (conforme Etapas Aplicadas):  
+Preenchido Abaixo (preenche linhas vazias com botão Para Baixo)  
+```  
+= Table.FillDown(#"Colunas Renomeadas",{"Região"})  
+```  
+
+---  
+
+
 #### # A importância dos tipos de dados  
 Funções automáticas DAX em uso (conforme Etapas Aplicadas):  
 
