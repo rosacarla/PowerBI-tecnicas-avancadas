@@ -1,6 +1,5 @@
-### Introdução à Linguagem DAX 
 #### # Utilize funções de agregração  
-Funções DAX em uso:
+Funções DAX em uso:  
 Cálculo do total de vendas com SUM
 ```
 Soma Vendas = SUM('Pedidos Detalhes'[Total])   
@@ -18,7 +17,7 @@ Media Vendas = AVERAGE('Pedidos Detalhes'[Total])
 
 #### # Criando uma coluna calculada  
 MEDIDAS não criam COLUNAS, são utilizadas apenas dentro de visuais. Colunas criadas com DAX não podem ser visualizadas no Power Query porque foram criadas utilizando funções DAX que não podem ser processadas no Power Query.  
-Funções DAX em uso: 
+Funções DAX em uso:  
 <p align="justify">  
 Cálculo de desconto aplicado em preço unitário com multiplicação de SUM das colunas da tabela - nova medida calculada "Valor Desconto" para usar em um visual, pois não tem contexto embora esteja armazenada dentro de uma tabela.  
 </p>  
@@ -37,7 +36,7 @@ Valor Desconto2 = 'Pedidos Detalhes'[Preço Unitário] * 'Pedidos Detalhes'[Desc
 ---  
 
 #### # Realize uma divisão segura com a DIVIDE  
-Funções DAX em uso:
+Funções DAX em uso:  
 Cálculo da relação entre as somas de vendas e de meta anual com DIVIDE - nova medida calculada  
 ```  
 Vendas vs Meta = DIVIDE([Soma Vendas],[Soma Meta],BLANK())  
@@ -51,7 +50,7 @@ Com o reaproveitamento da medida obtém-se um resultado mais significativo para 
 ---  
 
 #### # Introdução à função CALCULATE  
-funções DAX em uso:  
+Funções DAX em uso:  
 Cálculo do percentual da categoria Componentes (filtro) comparado a outras categorias na soma de vendas com CALCULATE - nova medida calculada  
 ```
 Vendas Componentes = CALCULATE([Soma Vendas],'Produtos Categorias'[Nome Categoria]="Componentes")  
@@ -64,7 +63,7 @@ Comparação Componentes = DIVIDE([Soma Vendas],[Vendas Componentes],BLANK())
 ---  
 
 #### # Função ALLSELECTED  
-Funções DAX em uso:
+Funções DAX em uso:  
 Inserir total de vendas na tabela para incluir todas as linhas com CALCULATE e ALL (remove todos os filtros int e ext do visual) - nova medida calculada 
 ```
 Todas as Vendas = CALCULATE([Soma Vendas],ALL('Pedidos Detalhes'))  
