@@ -148,7 +148,7 @@ por Página Inicial/Combinar/Mesclar Consultas/selecionar coluna da tab. princip
 
 #### # Crie colunas adicionais  
 <p align="center">
-	<img src="" width="750">
+	<img src="https://github.com/rosacarla/PowerBI-tecnicas-avancadas/blob/main/images/coluna-condicional.png" width="750">
 </p>  
 
 Funções automáticas DAX em uso (conforme Etapas Aplicadas):  
@@ -191,7 +191,7 @@ Função automática DAX em uso (conforme Etapas Aplicadas):
 
 #### # Agrupe dados no Power Query  
 <p align="center">
-	<img src="" width="750">
+	<img src="https://github.com/rosacarla/PowerBI-tecnicas-avancadas/blob/main/images/agrupa-power-query.png" width="750">
 </p>  
 
 Funções automáticas em uso (conforme Etapas Aplicadas):  
@@ -214,7 +214,7 @@ Funções automáticas em uso (conforme Etapas Aplicadas):
 ```  
 Regra criada pela engrenagem ao lado da etapa Linhas Filtradas
 <p align="center">
-	<img src="" width="750">
+	<img src="https://github.com/rosacarla/PowerBI-tecnicas-avancadas/blob/main/images/agrupa-contar-linhas.png" width="600">
 </p>  
 
 * Linhas Agrupadas (conforme regra por Grupo de Tamanho e Qtde de Estados)  
