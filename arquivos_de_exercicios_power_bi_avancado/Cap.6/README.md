@@ -64,7 +64,7 @@ Comparação Componentes = DIVIDE([Soma Vendas],[Vendas Componentes],BLANK())
 
 ---  
 
-#### # Função ALLSELECTED  
+#### # Função ALL e ALLSELECTED  
 Funções DAX em uso:  
 * Inserir total de vendas na tabela para incluir todas as linhas com CALCULATE e ALL (remove todos os filtros int e ext do visual) - nova medida calculada 
 ```
