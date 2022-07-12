@@ -231,21 +231,35 @@ Lucro Variação = [Soma Vendas]-Produtos[Soma Custo Variação]
 ```  
 Para as categorias que apresentam valores negativos é recomendado ajuste do investimento para que todas gerem lucro.  
 - Calcule o ano anterior com a SAMEPERIODLASTYEAR  
-
-- Calcule o mês anterior com a DATEADD  
+Função DAX em uso:  
+Exibe vendas do ano anterior ao lado da coluna dos meses do ano atual com CALCULATE que muda o contexto de filtro e SAMEPERIODLASYEAR que filtra os dados. 
+```
+Vendas Ano Anterior = CALCULATE([Soma Vendas],SAMEPERIODLASTYEAR('Calendário'[Data]))  
+```  
+- Calcule o mês anterior com DATEADD  
+DATEADD desloca um período conforme os argumentos inseridos nessa função, com CALCULATE o contexto de filtro é mudado e o mês anterior é trazido para outra coluna da tabela. No exemplo comparam-se as performances de vendas de mês atual e mês anterior, por isso é acrescentado -1 como argumento do intervalo filtrado.  
+```  
+Vendas Mes Passado = CALCULATE([Soma Vendas],DATEADD('Calendário'[Data],-1,MONTH))
+```  
 - Acumule valores com funções de TOTALYDT, QTD, e MTD  
-
-Exemplos de:  
-- [XXXX]().  
-- [XXX]().  
-- [XXXX]().  
-
+TOTALYTD acumula valores conforme o contexto de filtro atual. Sigla YTD significa Year To Date.
+Funções DAX em uso:
+Mostra acumulado de valores até o final do ano com CALCULATE e TOTALYTD, que recomeça a contagem a cada mudança de ano. 
+```  
+Acumulado Year To Date 2 = TOTALYTD([Soma Vendas],'Calendário'[Data])   
+```  
+Mostra acumulado de valores por trimestre do ano com CALCULATE e TOTALQTD, que recomeça a contagem ao mudar de ano.  
+``` 
+Acumulado Year To Date Quarter = TOTALQTD([Soma Vendas],'Calendário'[Data])   
+```  
 
 ☑️ **8. Organizando os visuais e compartilhando o projeto**  
 - Organização e publicação do relatório  
-- Formas de consumo de dados no Power BI  
+Visualização do relatório Adventure_Report na [web](https://app.powerbi.com/reportEmbed?reportId=6fcd1e60-7567-480d-be1d-fac0cd7e1157&autoAuth=true&ctid=8a1ef6c3-8324-4103-bf4a-1328c5dc3653&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D). 
 
-Exemplo...  
+- Formas de consumo de dados no Power BI  
+ Versão do relatório Adventure_Report em Dashboard  
+   
 <p align="center">
 	<img src="" width="750">
 </p>  
@@ -253,6 +267,7 @@ Exemplo...
 
 ☑️ **Conclusão**  
 Próximos passos para explorar seus conhecimentos e continuar aprendendo
+Leitura sobre atualizações mensais do Power BI no site oficial, sobretudo na seção do blog: https://powerbi.microsoft.com/pt-br/blog/.  
 
 ---
 
