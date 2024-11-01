@@ -40,7 +40,7 @@ Presente apenas dentro do Power Query. | Não é possível utilizar funções DA
 🔹[Compreenda a cardinalidade dos dados](https://github.com/rosacarla/PowerBI-tecnicas-avancadas/blob/main/images/cardinalidade-dados.png)  
 Na modelagem de dados, CARDINALIDADE significa o grau de relação entre colunas e tabelas.  
 🔹 Explore os tipos de tabelas e colunas do modelo  
-Conceitos de tabela fato, tabela dimensão ou cadastro, chave primária e chave estrangeira foram demonstrados através das tabelas que compõem a base de dados [AdventureWorks](https://github.com/rosacarla/PowerBI-tecnicas-avancadas/blob/main/arquivos_de_exercicios_power_bi_avancado/Cap.5/AdventureWorks.accdb) em Access.   
+Conceitos de tabela fato, tabela dimensão ou cadastro, chave primária e chave estrangeira foram demonstrados através das tabelas que compõem a base de dados [AdventureWorks](arquivos_de_exercicios_power_bi_avancado/Cap.5/AdventureWorks.zip) em Access.   
 🔹 Compreenda o  motivo de tabelas dimensão e fato  
 Diferença entre relatórios e modelo de dados  
 
